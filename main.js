@@ -87,3 +87,20 @@ const characters = [
     },
 ];
 
+// MAP (Bonus)
+function mapExample()
+{
+    characters.map(function(element, index){
+        // the line below will replace the current element with element value + 10
+        return   console.log( "Name is: " + element.name + " ,  Height is: " + element.height)
+    })
+    
+}
+
+//REDUCE (Bonus)
+// function reduceExample()
+// {
+//     characters.reduce(function(element,index){
+//         return console.log(element.height ) 
+//     })
+// }

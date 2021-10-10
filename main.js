@@ -1,5 +1,4 @@
-const characters = [
-    {
+const characters = [{
         name: 'Luke Skywalker',
         height: 172,
         mass: 77,
@@ -28,3 +27,14 @@ const characters = [
         gender: 'male',
     },
 ];
+//Get array of all names
+console.log(characters.map(function names(characters) {
+    return characters.name
+}))
+
+//Get array of all heights
+console.log(characters.map(function names(characters) {
+    return characters.height
+}))
+
+//REDUCE

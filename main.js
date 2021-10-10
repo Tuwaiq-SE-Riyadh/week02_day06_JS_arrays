@@ -28,3 +28,39 @@ const characters = [
         gender: 'male',
     },
 ];
+
+function numberExists(x,y){
+    for(let i = 0 ; i < x.length ;i++){
+        if (x[i]===y){
+            console.log(true);
+        }
+    }
+
+}
+numberExists([1,2,3],3)
+
+function findElements(x,y){
+    for(let i = 0 ; i < x.length ;i++){
+        if (x[i]+x[i+1]==y){
+            console.log(x[i],x[i+1])
+        }
+    }
+
+}
+findElements([1,2,3],3)
+
+function numberOfEvenAndOdd(x,y){
+    for(let i = 0 ; i < x.length ;i++){
+        if (x[i]%2 == 0){
+            console.log("number "+x[i] + " is even")
+        }
+        else if (x[i]%2 !== 0){
+          console.log("number "+x[i] + " is odd")
+        }
+        else{
+          console.log("Not a Number")
+        }
+    }
+
+}
+numberOfEvenAndOdd([1,2,3,5,3,99])

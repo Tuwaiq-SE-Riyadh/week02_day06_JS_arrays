@@ -62,15 +62,15 @@ function checkEvenOdd(array3){
     }
 }
 
-// function useMapName(){
-//      characters.map(function (element){
-//          return console.log( element.name);
-//      })
-// }
+function useMapName(){
+     characters.map(function (element){
+         return console.log( element.name);
+     })
+}
 
-// function useMapHeights(){
-//     characters.map(function (element){
-//         return console.log( element.height);
-//     })
-// }
+function useMapHeights(){
+    characters.map(function (element){
+        return console.log( element.height);
+    })
+}
 

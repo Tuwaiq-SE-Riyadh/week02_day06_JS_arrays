@@ -28,3 +28,47 @@ const characters = [
         gender: 'male',
     },
 ];
+
+function chech(array , x){
+
+    for( let i = 0; i < array.length; i++){
+      if (array[i]==x){
+       return true;
+        }
+        
+}
+  return false;    
+}
+
+
+
+function sum(array, x){
+
+    for( let i = 0; i < array.length; i++){
+        for( let j = 1; j < array.length; j++){
+            let y =array[i]+array[j];
+        if (y==x){
+        console.log(array[i]+"  "+array[j])
+    }
+
+        }
+
+    }
+}
+
+function addEven (array){
+    for( let i = 0; i < array.length; i++){
+        if (array[i]%2==0){
+            console.log(array[i] +" even") }
+                else console.log(array[i] +" odd")}
+}
+    
+ 
+   let y=characters.map(function(element,index){
+            return element.height  })
+ let x=characters.map(function(element,index){
+            return element.name  })
+    
+            
+
+           

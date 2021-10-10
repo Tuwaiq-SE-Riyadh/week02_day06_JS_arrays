@@ -28,3 +28,59 @@ const characters = [
         gender: 'male',
     },
 ];
+
+function Check(array, key) {
+
+    for (let index = 0; index < array.length; index++) {
+        if( array[index] == key){
+            return true;
+        }
+    }
+    return 0;
+}
+
+function FindSum(array , key) {
+
+    for (let i = 0; i < array.length; i++) {
+        for (let j = 0; j < array.length; j++) {
+            let sum = array[j]+array[i];
+            if(sum === key)
+                console.log(array[j] + "+" + array[i] +" = " + key);
+                break;
+            
+        }        
+    }
+    
+}
+
+function EvenOdd(array) {
+    let odd =0 ;
+    let even =0 ;
+
+    for (let i = 0; i < array.length; i++) {
+        if(array[i] % 2 == 0){
+            even++;
+        }else{
+            odd++;
+        }   
+    }
+    console.log("the number of odd: "+ odd + " the number of even: "+ even);
+    
+}
+
+
+
+
+
+
+
+// Bonus
+characters.map(function(value, index){
+    const names = [value.name];
+    return names;
+})
+
+characters.map(function(value, index){
+    const heights = [value.name];
+    return heights;
+})

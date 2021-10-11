@@ -45,7 +45,7 @@ function chech(array , x){
 function sum(array, x){
 
     for( let i = 0; i < array.length; i++){
-        for( let j = 1; j < array.length; j++){
+        for( let j = 0; j < array.length; j++){
             let y =array[i]+array[j];
         if (y==x){
         console.log(array[i]+"  "+array[j])

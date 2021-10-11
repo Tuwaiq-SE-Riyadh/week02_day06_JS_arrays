@@ -43,9 +43,9 @@ function check(array, num){
 
 function check2(array2, num2){
     for(let i=0;i<array2.length ; i++){
-        for(let j=0;j<array2.length ; j++){
+        for(let j=i+1;j<array2.length ; j++){
             if ((array2[i]+array2[j])===num2){
-                console.log("The some of "+array2[i]+" and "+array2[j] +"is equal "+ num2);
+                console.log("The some of "+array2[i]+" and "+array2[j] +" is equal "+ num2);
             }
         }
     }
